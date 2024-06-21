@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#">Exploration Escapade</a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#destinations" onclick="scrollToSection('destinations')">Destinations</a></li>
+                <li><a href="#reviews" onclick="scrollToSection('reviews')">Reviews</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+    <section class="hero-section" id="home">
+        <div class="content">
+            <h2>Pack your bags & go on an adventure now!</h2>
+            <p>
+                Exploration Escapade promises thrilling encounters with new cultures, breathtaking landscapes, and unforgettable moments. Whether you're trekking through dense jungles, traversing vast deserts, or navigating bustling city streets, each step unveils a tapestry of experiences waiting to be discovered.
+            </p>
+            <button onclick="scrollToSection('contact')">Book Now</button>
+        </div>
+    </section>
+    <section class="hidden-section" id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="mumbai.jpg" alt="Mumbai">
+                <h3>Mumbai</h3>
+            </div>
+            <div class="card">
+                <img src="delhi.jpg" alt="New Delhi">
+                <h3>New Delhi</h3>
+            </div>
+            <div class="card">
+                <img src="goa.jpg" alt="Goa">
+                <h3>Goa</h3>
+            </div>
+        </div>
+    </section>
+    <section class="hidden-section" id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p>"Amazing experience! Highly recommended."</p>
+            <p>- Abhisekh S.</p>
+        </div>
+        <div class="review">
+            <p>"Great service and wonderful destinations."</p>
+            <p>- Baikuntho Rao</p>
+        </div>
+        <div class="review">
+          <p>"Wonderful experience!"</p>
+          <p>- Amita Rani S.</p>
+      </div>
+      <div class="review">
+        <p>"An absolutely breathtaking and unforgettable experience"</p>
+        <p>- Aryansh Patra</p>
+    </div>
+    </section>
+    <section class="hidden-section" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
